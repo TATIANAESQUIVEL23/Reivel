@@ -1,0 +1,75 @@
+﻿
+<html><title>REIVEL.COM</TITLE>
+<head>
+	<header>
+        <div class="banner1">
+            <link rel="stylesheet" href="banner1.css" type="text/css">
+            <img src="bant.jpg">
+
+        </div>
+        
+    </header>
+</head>
+<body BGCOLOR ="#E6E6FA">
+ <link rel="stylesheet" href="Trabajo.CSS" type="text/css">
+			
+	<body>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="file:///C:/Users/pc1/Downloads/Reivel/Trabajo.html">index</a></li>
+			
+				<li><a href="file:///C:/Users/pc1/Downloads/Reivel/Quienes.html">Quienes somos</a>
+					<ul>
+						<li><a href="file:///C:/Users/pc1/Downloads/Reivel/plan.html">plan estrategico</a>
+                                                <ul>
+                                                 <li><a href="file:///C:/Users/pedrito/Documents/reivel2.html">vision</a></li>
+						<li><a href="file:///C:/Users/ESTUDIANTE/Desktop/Reivel/Trabajo.html">mision</a></li>
+						<li><a href="file:///C:/Users/ESTUDIANTE/Desktop/Reivel/Trabajo.html">valores corporativos</a></li>
+						</ul>
+
+						<li><a href="file:///C:/Users/ESTUDIANTE/Desktop/Reivel/Trabajo.html">Proyecto</a>
+							<ul>
+								<li><a href="file:///C:/Users/pc1/Downloads/Reivel/formulacion.html">formulacion</a></li>
+								<li><a href="file:///C:/Users/pc1/Downloads/Documento%20sin%20t%C3%ADtulo.pdf">marco teorico</a></li>
+								<li><a href="file:///C:/Users/pc1/Downloads/Documento%20sin%20t%C3%ADtulo%20(1).pdf">marco legal</a></li>
+								<li><a href="file:///C:/Users/pc1/Downloads/Gr%C3%A1fico%20Diagrama%20Cronograma%20Moderno%20Gris%20y%20Turquesa.pdf">cronograma</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="file:///C:/Users/pc1/Downloads/Reivel/solucion.html">Solucion tecnologica</a>
+					
+				</li>
+				<li><a href="file:///C:/Users/pc1/Downloads/Reivel/Evidencias.html">Evidencias</a></li>
+                                 </li>
+								</div>
+								<br>
+								<br>
+								<br>
+								<link rel="stylesheet" href="plan.css" type="text/css">
+							<div class="menu">
+								<center>
+									<button class="menu-button" onclick="showImage('image1')">MISION</button>
+									<button class="menu-button" onclick="showImage('image2')">VISION</button>
+									<button class="menu-button" onclick="showImage('image3')">VALORES</button>
+								</center>
+							</div>
+							
+								<div class="image-container">
+									
+									<img id="image1" class="image" src="mision.png">
+									<img id="image2" class="image" src="vision.png">
+									<img id="image3" class="image" src="valores.png">
+								</div>
+							
+								<script>
+									function showImage(imageId) {
+										// Ocultar todas las imágenes
+										const images = document.querySelectorAll('.image');
+										images.forEach(image => image.classList.remove('active'));
+							
+										// Mostrar la imagen seleccionada
+										const selectedImage = document.getElementById(imageId);
+										selectedImage.classList.add('active');
+									}
+								</script>
